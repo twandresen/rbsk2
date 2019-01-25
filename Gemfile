@@ -39,6 +39,12 @@ gem 'unicorn'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 
+gem 'bootstrap'
+gem 'jquery-rails'
+
+# use less
+#gem 'less-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
