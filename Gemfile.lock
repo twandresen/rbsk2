@@ -267,6 +267,8 @@ DEPENDENCIES
   binding_of_caller
   bootsnap (>= 1.1.0)
   byebug
+  capistrano
+  capistrano-bundler
   capistrano-rails
   capistrano-rvm
   capistrano3-unicorn
@@ -282,7 +284,7 @@ DEPENDENCIES
   mysql2
   puma (~> 3.11)
   rails (~> 5.2.2)
-  sass-rails (~> 5.0)
+  sass-rails (~> 5.0, >= 5.0.6)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
