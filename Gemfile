@@ -31,7 +31,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 
 # js runtime
-gem "therubyracer"
+#gem "therubyracer"
+# ruby racer not compatible
+gem "mini_racer"
 
 # unicorn
 gem 'unicorn'
