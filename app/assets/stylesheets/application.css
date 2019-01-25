@@ -12,8 +12,7 @@
  *
  *= require_tree .
  *= require_self
- *= require lib/bootstrap
- *= require lib/bootstrap-switch.css
+ *= require twitter/bootstrap
  *= require site.less
  */
 

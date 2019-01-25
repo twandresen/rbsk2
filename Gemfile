@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # js runtime
 gem "therubyracer"
 
+gem 'jquery-rails'  # If using Bootstrap's JS plugins.
+gem 'less-rails-bootstrap'
+
 # unicorn
 gem 'unicorn'
 
