@@ -31,9 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 
 # js runtime
-#gem "therubyracer"
-# ruby racer not compatible
-gem "mini_racer"
+gem "therubyracer"
 
 # unicorn
 gem 'unicorn'
@@ -41,11 +39,8 @@ gem 'unicorn'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 
-gem 'bootstrap'
-gem 'jquery-rails'
-
 # use less
-#gem 'less-rails'
+gem 'less-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -73,6 +68,24 @@ group :development do
 end
 
 group :test do
+
+	gem 'thin'
+
+  # better_errors (depends on binding_of_caller)
+  # displays extended exception information and
+  # a live console in place of the standard Rails
+  # error page...
+  gem 'better_errors'
+  gem 'binding_of_caller'
+
+  # meta_request enable use of rails_panel which
+  # is a chrome browser extension that shows request
+  # information in the chrome developer toolbar
+  gem 'meta_request'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'

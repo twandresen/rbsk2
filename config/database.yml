@@ -1,12 +1,12 @@
 default: &default
   adapter: mysql2
-	host: localhost
-	username: rbsk
-	password: rbsk
+  host: localhost
+  username: rbsk
+  password: rbsk
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-	encoding: utf8
-	reconnect: true
+  encoding: utf8
+  reconnect: true
 
 development:
   <<: *default
