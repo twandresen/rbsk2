@@ -13,6 +13,9 @@ gem 'puma', '~> 3.11'
 #gem 'sass-rails', '~> 5.0'
 gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 
+# browser gem detects browser info and mobile
+gem 'browser', '0.6.0'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
