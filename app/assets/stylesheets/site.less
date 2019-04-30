@@ -1,8 +1,12 @@
 @import "vars";
 @import "mixins";
-@import "site/traditional";
+@import "site/fonts";
 @import "site/elusive-webfont";
+@import "site/traditional";
 @import "menus";
+@import "site/controllers/home.less";
+@import "site/controllers/partners.less";
+@import "site/controllers/practices.less";
 
 body	{
 	height: 100%;
@@ -12,12 +16,20 @@ body	{
   max-width: 100%;
   padding-top: 0px;
 
-  
+	.btn {
+		height:40px;
+		line-height:40px;
+		padding: 0 30px;
+		font-size:16px;
+	}
 
+	.btn-primary-blue-inverse {
+		color: #193d7d;
+		background-color: #fff;
+		border-color: #193d7d;
+		padding: 10 60px;
 
-
-
-
+	}
 
 	.global-header {
 		background-color: #fff;
@@ -157,7 +169,7 @@ body	{
 
         .hero-traditional {
 	 	margin-top:-100px;
-  	        background-image: url("https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/home_bg_light.png");
+  	background-image: url("https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/home_bg_light.png");
 		min-height:760px;
 		background-size:cover;
 
@@ -542,9 +554,41 @@ body	{
 
 	}
 
+	.header .top-nav .navbar-nav > li > a:hover {
+    padding: 10px 8px;
+    color: #c89f42;
+		background-color:#fff;
+	}
+	.header .top-nav .navbar-nav > li.active > a:after, .header .top-nav .navbar-nav > li.active > a:hover:after {
+    border-bottom: solid 2px #c89f42 !important;
+		background-color:#fff;
+	}
+	.top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+    border-bottom: solid 2px #c89f42 !important;
+		background-color:#fff;
+	}
+	.top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+    border-bottom: solid 2px #c89f42 !important;
+		background-color:#fff;
+	}
+	.header .top-nav .navbar-nav > li > a:hover:after {
+    border-bottom: solid 2px #c89f42;
+		background-color:#fff;
+	}
 
+	.section-6b {
+    height: 450px;
+    background: transparent url(https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/contact_rbsk_law.jpg) no-repeat fixed center center;
+    background-size: 100%;
+	}
 
-
+	.section-4b {
+    position: relative;
+    z-index: 40;
+    background: transparent url(https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/terms_definitions_rbsk_law.jpg) no-repeat fixed center top;
+    background-size: 100%;
+    padding: 120px 0 120px 50%;
+	}
 
 
 }

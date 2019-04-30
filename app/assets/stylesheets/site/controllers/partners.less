@@ -1,0 +1,265 @@
+// main: site.less
+@import "vars";
+@import "mixins";
+
+body.partners{
+
+.secondary-nav {
+width:100%;
+max-width:100%;
+height: 80px;
+padding-top: 14px;
+text-align: left;
+margin: 0px auto;
+background: #c89f42;
+border-bottom: 4px solid #c89f42;
+box-shadow: inset 0px 0px 50px 20px #193d7d;
+}
+
+.secondary-nav > p {
+font-family: Oswald;
+font-size: 32px;
+color: #fff;
+text-align: left;
+margin-left: 60px;
+}
+
+
+.section-6b {
+    height: 450px;
+    background: transparent url(https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/contact_rbsk_law.jpg) no-repeat fixed center center;
+    background-size: 100%;
+}
+
+.section-4b {
+    position: relative;
+    z-index: 40;
+    background: transparent url(https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/terms_definitions_rbsk_law.jpg) no-repeat fixed center top;
+    background-size: 100%;
+    padding: 120px 0 120px 50%;
+}
+
+.bio-link > p {
+font-family: Oswald;
+font-size: 24px;
+text-align: left;
+margin-left: 60px;
+margin-top: 40px;
+}
+
+.bio-link > p > a, .bio-info > p > a, .bio-email > p > a {
+    color: #193d7d !important;
+text-decoration: none;
+}
+
+.bio-link > p > a:hover,.bio-link.p > a:focus, .bio-info > p > a:hover, .bio-info > p > a:focus, .bio-email > p > a:hover, .bio-email > p > a:focus {
+    color: #c89f42 !important;
+    text-decoration: underline;
+}
+
+.bio-link > p > a:focus {
+outline: thin dotted;
+outline: 5px auto -webkit-focus-ring-color;
+outline-offset: -2px;
+}
+
+.bio-info > p {
+font-size: 21px;
+font-family: Oswald;
+color: #193d7d;
+text-align: left;
+margin-left: 60px;
+}
+
+.bio-email > p {
+font-size: 18px;
+font-family: Oswald;
+color: #193d7d;
+text-align: left;
+margin-left: 60px;
+}
+
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect h2 {
+font-family:Oswald;
+text-transform:uppercase;
+color:#fff;
+margin:200px 0px 20px 0px;
+text-align:center;
+position:relative;
+font-size:18px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-200px);
+-ms-transform:translatey(-200px);
+transform:translatey(-200px);
+-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+padding:30px;
+}
+
+.overlay > a, .overlay > h2 > a {
+color: #c89f42 !important;
+font-family: Oswald;
+font-size:21px;
+}
+
+.overlay > h2 > a:hover, .overlay > a:hover {
+color:#ddc388 !important;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#c89f42 !important;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .5s ease-in-out;
+transition:all .5s ease-in-out;
+margin:200px 0 0;
+padding:7px 14px;
+}
+
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.5s;
+transition-delay:.5s;
+}
+
+.bio-detail-left-pane {
+width: 50%;
+background-image: url("https://s3.us-east-2.amazonaws.com/rbsk/team/matthew_h_beaulieu.jpg");
+background-size: cover;
+background-position:-100px 0px;
+background-repeat: no-repeat;
+height: 100%;
+min-height: 100%;
+border-right: 2px solid #193d7d;
+border-top-right-radius: 20%;
+border-bottom-right-radius: 20%;
+display:inline-block;
+position:absolute;
+overflow:hidden;
+
+}
+
+.kostin {
+	background-image: url("https://s3.us-east-2.amazonaws.com/rbsk/team/heidi_kostin.jpg");
+}
+
+.saunders {
+	background-image: url("https://s3.us-east-2.amazonaws.com/rbsk/team/brandon_saunders.jpg");
+}
+
+.bio-callout {
+top: 560px;
+box-shadow: 5px 10px 20px -7px rgba(26,26,26,.4);
+position: absolute;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+background-color: #666;
+background-size: 100%;
+padding: 1.4rem;
+text-align: center;
+opacity: 0.7;
+z-index: 10;
+}
+
+.bio-callout > p {
+color: #fff;
+font-family: Oswald;
+font-size: 28px;
+text-align: right;
+padding-right:120px;
+}
+
+.bio-callout > p > a {
+color: #fff !important;
+font-family: Oswald !important;
+font-size: 18px !important;
+font-weight:normal;
+margin-left:2px;
+}
+
+.bio-callout > p > a:hover {
+color: #c89f42 !important;
+text-decoration: underline !important;
+}
+
+.bio-callout > p > a:focus {
+color: #c89f42 !important;
+}
+
+
+.bio-detail-right-pane {
+width: 85%;
+margin-left: 50px;
+}
+
+.bio-detail-right-pane > p {
+color: #fff;
+font-family: Cardo;
+font-size: 18px;
+line-height: 1.2em;
+}
+
+
+
+}

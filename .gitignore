@@ -7,6 +7,16 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore local config files.
+config/unicorn.development.rb
+config/initializers/localhost.rb
+
+# Ignore sensitive config files.
+config/database.yml
+config/secrets.yml
+config/certs
+config/ga_client_secret.json
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -29,3 +39,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+*~
+*swp

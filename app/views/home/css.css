@@ -9701,110 +9701,6 @@ textarea.form-control {
     }
 }
 
-body.home.index {
-    padding-top: 0 !important;
-}
-
-body.home.index .header {
-    display: none !important;
-}
-
-body.home.index .home-nav {
-    padding: 10px;
-}
-
-body.home.index .home-nav .header {
-    position: static;
-    display: block !important;
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-}
-
-body.home.index .home-nav .header.free-flow .caret,body.home.index .home-nav .header.free-flow .dropdown-menu {
-    display: none;
-}
-
-body.home.index .section-1 {
-    background: #777;
-    position: relative;
-    z-index: 10;
-}
-
-body.home.index .section-1 .section-1-img {
-    max-width: 100%;
-    width: 100%;
-}
-
-body.home.index .section-1 .copy {
-    position: absolute;
-    bottom: 25%;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    text-align: center;
-    color: #FFF;
-}
-
-body.home.index .section-1 .copy .impact-logo {
-    margin-bottom: 20px;
-}
-
-body.home.index .section-1 .copy h1 {
-    font-size: 48px;
-    font-family: 'gotham_bookregular',Arial,Helvetica,sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    line-height: 48px;
-    margin: 0 0 20px;
-}
-
-body.home.index .section-1 .copy h1 small {
-    color: #FFF;
-    display: block;
-    font-family: 'gotham_boldregular',Arial,Helvetica,sans-serif;
-    font-size: 28px;
-    line-height: 28px;
-    margin: 0 0 5px;
-}
-
-body.home.index .section-2 {
-    background: #a3c856;
-    color: #FFF;
-    white-space: nowrap;
-    position: relative;
-}
-
-body.home.index .section-2 > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
-    z-index: 900;
-}
-
-body.home.index .section-2:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 100%;
-    border: solid 2px #FFF;
-    left: 50%;
-    margin-left: -1px;
-    top: 0;
-    z-index: 500;
-}
-
-body.home.index .section-2 .section-2a,body.home.index .section-2 .section-2b {
-    white-space: normal;
-    display: inline-block;
-    width: 50%;
-    padding: 190px 120px 130px;
-    text-align: center;
-    position: relative;
-}
 
 body.home.index .section-2 .section-2a h2,body.home.index .section-2 .section-2b h2 {
     max-width: 450px;
@@ -10341,6 +10237,8 @@ body.home.index .section-5 .col-md-4.icon-demo:before {
         font-size: 12px;
     }
 }
+
+
 
 body.home.solutions {
 }
