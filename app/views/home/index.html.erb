@@ -21,17 +21,17 @@
           <div class="col-md-4">
 			<span class="el-icon-user" style="font-size:160px;"></span>
             <h3 style="font-size:18px;color:#fff;">Health Care Organizations</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tristique elit. Fusce molestie ullamcorper auctor. Nam rhoncus justo et felis faucibus, ac pretium arcu eleifend. Nunc elit felis, laoreet sit amet ante et, congue pellentesque dui. Mauris et libero aliquam purus vestibulum cursus.</p>
+			<p>We have provided patient care services for over 20 years and understand that swift action at the courthouse often helps improve patient care. We are in probate courts  across the Commonwealth, often on a weekly basis, and our strong relationships with court personnel and judges help us provide expedient processing services when needed most.</p>
           </div>
           <div class="col-md-4">
 			<span class="el-icon-user" style="font-size:160px;"></span>
             <h3 style="font-size:18px;color:#fff;">Attorneys</h3><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tristique elit. Fusce molestie ullamcorper auctor. Nam rhoncus justo et felis faucibus, ac pretium arcu eleifend. Nunc elit felis, laoreet sit amet ante et, congue pellentesque dui. Mauris et libero aliquam purus vestibulum cursus.</p>
+			<p>Many cases involving real estate and probate intersect including licenses to sell, petitions to partition and equitable proceedings. We have been retained by multiple attorneys for assistance in complex probate matters because of our experience and skill in cases involving will and trust disputes. We are well versed in the fiduciary services we can provide you.</p>
           </div>
           <div class="col-md-4">
 			<span class="el-icon-user" style="font-size:160px;"></span>
             <h3 style="font-size:18px;color:#fff;">Individuals - Seniors, Families, New Adults</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed tristique elit. Fusce molestie ullamcorper auctor. Nam rhoncus justo et felis faucibus, ac pretium arcu eleifend. Nunc elit felis, laoreet sit amet ante et, congue pellentesque dui. Mauris et libero aliquam purus vestibulum cursus.</p>
+			<p>We work with individuals of all ages and backgrounds. Whether you are a new adult looking for a health care proxy, a family looking to establish a trust or a senior needing assistance with estate planning, our attorneys can provide you the legal help you need. We are especially thankful to our members of the military and offer a variety of services to meet your needs.</p>
           </div>
         </div>
 
@@ -53,42 +53,54 @@ Seeking assistance with real estate, probate litigation, guardianship/conservato
 
       <div class="row" style="max-width:1100px; margin: 60px auto 0;">
         <div class="col-md-2 col-sm-4">
-					<img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/gaurdianship_icon.png" style="width:100px;">
-          <p>Guardianship & Conservatorship</p>
+	  <%= link_to guardianship_practices_path do %>
+	  <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/gaurdianship_icon.png" style="width:100px;">
+          <p class="home-link">Guardianship & Conservatorship</p>
+	  <% end %>
         </div>
         <div class="col-md-2 col-sm-4">
+	  <%= link_to mental_health_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/mental_health_icon.png" style="width:100px;"/>
-          <p>Mental Health Litigation</p>
+          <p class="home-link">Mental Health Litigation</p>
+	  <% end %>
         </div>
         <div class="col-md-2 col-sm-4">
+	  <%= link_to estate_planning_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/estate_planning_admin_icon.png" style="width:100px;"/>
-          <p>Estate Planning & Elder Law</p>
+          <p class="home-link">Estate Planning & Elder Law</p>
+	  <% end %>
         </div>
         <div class="col-md-2 col-sm-4">
+	  <%= link_to probate_litigation_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/probate_litigation_icon.png" style="width:100px;"/>
-          <p>Probate Litigation</p>
+          <p class="home-link">Probate Litigation</p>
+	  <% end %>
         </div>
         <div class="col-md-2 col-sm-4">
+	  <%= link_to real_estate_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/real_estate_icon.png" style="width:100px;"/>
-          <p>Real Estate</p>
+          <p class="home-link">Real Estate</p>
+	  <% end %>
         </div>
         <div class="col-md-2 col-sm-4">
+	  <%= link_to personal_injury_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/personal_injury_icon.png" style="width:100px;"/>
 
-          <p>Personal Injury</p>
+          <p class="home-link">Personal Injury</p>
+	  <% end %>
         </div>
       </div>
       <div class="view-platform-details" style="text-align:center;padding: 50px 0;">
-				<%= link_to "Learn More About Our Practice Areas", practices_path, class: "btn btn-primary" %>
+	<%= link_to "Learn More About Our Practice Areas", practices_path, class: "btn btn-primary" %>
       </div>
     </div>
   </div>
   <div class="section-6" style="background:#fff; padding: 50px 0px;text-align:center;">
     <h2 style="color:#193d7d;">About Us.</h2><br/>
-			<p style="max-width:800px;text-align:center;margin:0px auto;">Our clients are our first priority.<br><br> As a team of attorneys, we are able to work collaboratively, together and with our clients, to determine the ideal legal strategy for each particular case. We seek to provide first-class counsel to individuals as well as organizations in areas including estate planning, family law, probate law, elder and disability law, and civil litigation, as well as providing fiduciary services and advice to closely held corporations. <br><br>Engaging RBSK Law Offices for your legal needs provides you with a team of professionals who strive for excellence in each case.</p>
+	<p style="max-width:800px;text-align:center;margin:0px auto;">Our clients are our first priority.<br><br> As a team of attorneys, we are able to work collaboratively, together and with our clients, to determine the ideal legal strategy for each particular case. We seek to provide first-class counsel to individuals as well as organizations in areas including estate planning, family law, probate law, elder and disability law, and civil litigation, as well as providing fiduciary services and advice to closely held corporations. <br><br>Engaging RBSK Law Offices for your legal needs provides you with a team of professionals who strive for excellence in each case.</p>
 
         <div style="text-align:center;margin-top:20px;">
-				<%= link_to "Meet Our Team", partners_path, class: "btn btn-primary-blue-inverse" %>
+	<%= link_to "Meet Our Team", partners_path, class: "btn btn-primary-blue-inverse" %>
       </div>
 
   </div>
