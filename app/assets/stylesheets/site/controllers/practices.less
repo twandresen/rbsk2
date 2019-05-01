@@ -11,7 +11,7 @@ height: 80px;
 padding-top: 14px;
 text-align: left;
 margin: 0px auto;
-background: #c89f42;
+background: #08152b;
 border-bottom: 4px solid #c89f42;
 box-shadow: inset 0px 0px 50px 20px #193d7d;
   a { color: #fff; }
@@ -24,6 +24,18 @@ font-size: 32px;
 color: #fff;
 text-align: left;
 margin-left: 60px;
+}
+
+.secondary-nav > p > a {
+font-family: Oswald;
+font-size: 32px;
+color: #efefef;
+text-align: left;
+}
+
+.secondary-nav > p > a:hover {
+opacity: 0.8;
+text-decoration: none;
 }
 
   #slideshow {
@@ -49,7 +61,7 @@ margin-left: 60px;
   min-height: 800px;
   height:auto;
   overflow:auto;
-  margin-bottom: -6px;
+  //margin-bottom: -6px;
   padding-bottom:30px;
   color: #08152b;
   }
@@ -111,7 +123,7 @@ margin-left: 60px;
   width: 50%;
   float: left;
   height: 1000px;
-  margin-bottom: -6px;
+  //margin-bottom: -6px;
   padding-left:40px;
   padding-bottom:30px;
   color: #fff;
@@ -195,6 +207,13 @@ margin-left: 60px;
   text-decoration: underline;
   }
 
+  .service-type {
+  width:80%;
+  float:left;
+  color: #333;
+  padding-bottom:10px;
+  } 
+
   .service-type > a {
   font-size:21px;
   color:#111;
@@ -213,19 +232,6 @@ margin-left: 60px;
   font-size:18px;
   display:none;
   }
-
-  .service-group > a {
-  font-size:21px;
-  color:#fff;
-  font-family:Oswald;
-  }
-
-  .service-group > a:hover {
-  text-decoration: underline;
-  opacity: 0.7;
-  color: #fff;
-  }
-
   
   #people-served {
   width: 50%;  
@@ -237,7 +243,7 @@ margin-left: 60px;
   position: relative;
   display: block; 
   background: #08152b;
-  margin-bottom: -6px;
+  //margin-bottom: -6px;
   }
 
   #people-served:hover {
@@ -262,15 +268,29 @@ margin-left: 60px;
   text-decoration: underline;
   }
 
-  .circle:before {
-  content: ' \25CF';
-  font-size: 600px;
-  position:absolute;
-  top:10px;
-  left:470px;
-  z-index: 100;
-  color: #c89f42;
-  //margin: -0.5em -0.3em -0.3em -0.1em
+  .service-group-summary {
+  width: 90%;
+  float: left;
+  //min-height: 800px;
+  height:auto;
+  padding-bottom:30px;
+  color: #08152b;
+  }
+
+  .service-group-summary > p {
+  color: #fff;
+  }
+
+  .service-group-summary > a {
+  font-size:21px;
+  color:#fff;
+  font-family:Oswald;
+  }
+
+  .service-group-summary > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  color: #fff;
   }
 
   .service-group {
