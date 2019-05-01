@@ -9,8 +9,8 @@
   <div class="top-nav navbar" style="margin:0px auto;float:right;">
     <ul class="nav navbar-nav ">
       <li class="<%= 'active' if current_page?(root_path) %>" style="font-size:16px !important;text-transform:uppercase;"> <%= link_to "Home", root_path %></li>
-      <li class="<%= 'active' if current_page?(partners_path) %>" style="font-size:16px !important;text-transform:uppercase;"> <%= link_to "Our People", partners_path %></li>
-      <li class="<%= 'active' if current_page?(practices_path) %>" style="font-size:16px !important;text-transform:uppercase;"> <%= link_to "Practice Areas", practices_path %></li>
+      <li class="<%= 'active' if controller.controller_name == 'partners' %>" style="font-size:16px !important;text-transform:uppercase;"> <%= link_to "Our People", partners_path %></li>
+      <li class="<%= 'active' if controller.controller_name == 'practices' %>" style="font-size:16px !important;text-transform:uppercase;"> <%= link_to "Practice Areas", practices_path %></li>
       <li class="" style="font-size:16px !important;text-transform:uppercase;"> <%= link_to "Contact", root_path %> </li>
     </ul>
   </div>
