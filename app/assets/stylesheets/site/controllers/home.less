@@ -16,6 +16,7 @@ body.modern.home.index{
 	
 	.home-link {
 	color: #fff;
+	z-index:100;
 	}	
 
 	.home-link:hover {
@@ -23,5 +24,35 @@ body.modern.home.index{
 	text-decoration: none;
 	}
 
+	.home-icon-image {
+	display:block;
+	width:100%;
+	height:auto;
+	}
 
+	.real-estate-icon {
+	width: 150px;
+	height: 100px;
+	align:center;
+	}
+
+	.real-estate-icon-overlay {
+	background: url('https://s3.us-east-2.amazonaws.com/rbsk/icons/real_estate_icon_hover2.png') no-repeat;
+	background-size: 100px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:40px;
+	right:0;
+	opacity: 0.1;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	transition: .5s ease;
+	}
+
+	.real-estate-icon:hover .real-estate-icon-overlay {
+	opacity: 1;
+	}
+	
 }
