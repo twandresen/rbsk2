@@ -2,7 +2,7 @@
 <div class="footer-wrap">
   <div class="footer-nav">
     <div>
-      <h3><a href="/about">About RBSK Law</a></h3>
+      <h3><%= link_to "About RBSK Law", partners_path %></h3>
       <div><%= link_to("Our Team", partners_path) %></div>
       <div><%= link_to("Matthew H. Beaulieu", beaulieu_partners_path) %></div>
       <div><%= link_to("Heidi Kostin", kostin_partners_path) %></div>
@@ -34,7 +34,7 @@
   	<div><%= link_to("Trusts", trusts_practices_path) %></div>
   	</div>
   	<div>
-    	  <h3><a href="/contact-us">Contact Us</a></h3>
+    	  <h3><%= link_to("Contact Us", contact_index_path) %></h3>
 	  <div><%= link_to "News & Updates", root_path %></div>
     	  <div><%= link_to "Terms & Definitions", root_path %></div>
 
