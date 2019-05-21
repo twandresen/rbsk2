@@ -36,4 +36,8 @@ Rails.application.routes.draw do
 
 
         resources :terms, only: [:index]
+        
+        resources :disclaimer, only: [:index]
+        resources :privacy, only: [:index]
+        
 end
