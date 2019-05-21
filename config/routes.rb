@@ -34,4 +34,6 @@ Rails.application.routes.draw do
 
 	resources :contact, only: [:index, :new, :create]
 
+
+        resources :terms, only: [:index]
 end
