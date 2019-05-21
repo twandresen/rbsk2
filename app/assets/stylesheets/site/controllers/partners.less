@@ -93,6 +93,52 @@ text-align: left;
 margin-left: 60px;
 }
 
+.hovereffect-fixed {
+width:100%;
+height:100%;
+float:left;
+overflow:hidden;
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect-fixed .overlay-fixed {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:200;
+left:0;
+opacity:1;
+background-color:rgba(0,0,0,0.5);
+}
+
+.hovereffect-fixed h2 {
+font-family:Oswald;
+text-transform:uppercase;
+color:#fff;
+margin:200px 0px 20px 0px;
+text-align:center;
+position:relative;
+font-size:18px;
+background:rgba(0,0,0,0.6);
+padding:30px;
+}
+
+.overlay-fixed > a, .overlay-fixed > h2 > a {
+color: #c89f42 !important;
+font-family: Oswald;
+font-size:21px;
+}
+
+.overlay > h2 > a:hover, .overlay > a:hover {
+color:#ddc388 !important;
+}
+
+
+
+
 .hovereffect {
 width:100%;
 height:100%;
