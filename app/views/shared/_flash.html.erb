@@ -1,0 +1,24 @@
+<% if flash.select{|k,v| !v.blank? && !v.strip.blank?}.any? -%>
+<div id="flash">
+  <% flash.each do |key, val| -%>
+    <%
+       level = case key
+       when 'notice'
+        'success'
+       when 'error', 'alert'
+        'danger'
+      else
+        'info'
+      end
+    -%>
+
+  <div class="alert alert-<%= level %>" role="alert">
+    <%= val.html_safe %>
+
+    <a href="#" id="flash-dismiss" class="flash-dismiss">
+      <i class="el-icon-remove-sign alert-<%= level %>"></i>
+    </a>
+  </div>
+  <% end -%>
+</div>
+<% end -%>
