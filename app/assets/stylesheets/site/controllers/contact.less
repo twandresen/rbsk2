@@ -109,7 +109,12 @@ body.modern.contact.index{
 		width: 50%;
 	}
 
-	.headline { color: #fff; font-size: 36px; font-family:Oswald; text-transform:uppercase;}
+	.headline { 
+		color: #fff; font-size: 36px; font-family:Oswald; text-transform:uppercase;
+		@media (max-width: @screen-sm-max) {
+			margin-top:20px;
+		}
+	}
 
 	h2,h4,p { color: #777; }
 
@@ -151,6 +156,5 @@ body.modern.contact.index{
 			border-radius: 4px;
 		}
 	}
-
 
 }
