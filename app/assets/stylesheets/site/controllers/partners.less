@@ -7,6 +7,9 @@ body.partners{
 	.partners-headline {
 		width:100%;position:relative;display:block;margin-top:140px;height:auto;
 
+		@media (max-width: @screen-sm-max) {
+			margin-top:100px;
+		}
 		@media (max-width: @screen-xs-max) {
 			margin-top:50px;
 		}
@@ -20,6 +23,9 @@ body.partners{
 		background:#c89f42;
 		background-image:url('https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/bg_justice.jpg');
 		background-size:cover;opacity:0.8;margin-bottom:-6px;
+		@media (max-width: @screen-sm-max) {
+			height:300px;
+		}
 		@media (max-width: @screen-xs-max) {
 			background-image: none;
 		}
@@ -40,6 +46,14 @@ body.partners{
 		background:rgba(0,0,0,0);
 		opacity:0.8;
 		border-top-right-radius:0px;
+
+
+		@media (max-width: @screen-sm-max) {
+			width: 80%;
+			padding-top: 40px;
+			padding-left:60px;
+			padding-bottom:20px;
+		}
 
 		@media (max-width: @screen-xs-max) {
 			width: 95%;
@@ -175,6 +189,10 @@ position:relative;
 font-size:18px;
 background:rgba(0,0,0,0.6);
 padding:30px;
+	@media (max-width: @screen-sm-max) {
+		margin-top: 230px;
+
+	}
 	@media (max-width: @screen-xs-max) {
 		margin-top: 0px;
 	}

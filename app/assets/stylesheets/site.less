@@ -27,13 +27,36 @@ body	{
 		line-height: 42px; 
 		margin: 0 0 10px;
 
-		span {
+		span > img {
 			max-width: 800px;
+			@media (max-width: @screen-sm-max) {
+				width: 700px;
+			}
+		}
+	}
+
+	.banner	{
+		position:absolute;top:200px;left:0;width:100%;text-align:center;color:#fff;
+		@media (max-width: @screen-sm-max) {
+			top: 130px !important;
 		}
 	}
 
 	.side-copy {
 		position: absolute; left: 25%; top: 400px; width: 50%; padding: 20px 40px; background: rgba(255,255,255,0.6); text-align:center; border-radius: 6px;
+
+		@media (max-width: @screen-sm-max) {
+	    top: 300px;
+    	width: 80%;
+    	left: 10%;
+
+		}
+		@media (max-width: @screen-xs-max) {
+	    top: 300px;
+    	left: 5%;
+    	width: 90%;
+    	padding: 20px;
+		}
 	}
 
 	.section-2	{
@@ -70,6 +93,9 @@ body	{
 
 	.practices-headline	{
 		width:100%;position:relative;display:block;margin-top:140px;height:auto;
+		@media (max-width: @screen-sm-max) {
+			margin-top:100px;
+		}
 	}
 
 	.offerings	{
@@ -78,10 +104,16 @@ body	{
 		font-family:Oswald;
 		font-size:21px;
 		line-height:1.6em;
+		@media (max-width: @screen-sm-max) {
+			padding-left:60px;
+		}
 	}
 
 	.people-served {
 		padding-left:60px;padding-right:60px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;
+		@media (max-width: @screen-sm-max) {
+			padding-left:20px;
+		}
 	}
 
 	.btn {
@@ -736,10 +768,19 @@ body	{
   }
   .navbar-toggle {
       display: block;
+
+    @media (max-width: @screen-sm-max) {
+      top:25px;
+    }
+    @media (max-width: @screen-xs-max) {
+      top:0px;
+    }
+
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+
   }
   .navbar-fixed-top {
       top: 0;

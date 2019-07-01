@@ -13,6 +13,14 @@ body.modern.contact.index{
 		text-align:center;
 	}
 
+	.contact-banner {
+		max-width: 800px;
+		@media (max-width: @screen-sm-max) {
+			width: 700px;
+		}
+
+	}
+
 	.section-6 {
 	font-family: 'gotham_bookregular',Arial,Helvetica,sans-serif;
 	color: #777;
@@ -36,11 +44,14 @@ body.modern.contact.index{
 		font-size:42px;
 		color: #fff;
 
+		@media (max-width: @screen-sm-max) {
+			width: 80%;
+			left: 5%;
+		}
+
 		@media (max-width: @screen-xs-max) {
 			top: 80px;
 		}
-
-
 	}
 
 	.canvas {
@@ -54,6 +65,10 @@ body.modern.contact.index{
 		text-align:center; 
 		border-radius: 2px;
 
+		@media (max-width: @screen-sm-max) {
+			top: 330px;
+
+		}
 		@media (max-width: @screen-xs-max) {
 			top: 150px;
 			width: 80%;
