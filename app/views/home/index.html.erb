@@ -3,19 +3,20 @@
 
       <img class="section-1-img"/>
     <div class="copy" style="position:absolute;top:200px;left:0;width:100%;text-align:center;color:#fff;">
-      <h1 style="font-size: 42px; font-family: 'gotham_bookregular',Arial,Helvetica,sans-serif; font-weight: 400; text-transform: uppercase; line-height: 42px; margin: 0 0 10px;"><span><!--READY | BEAULIEU | SAUNDERS | KOSTIN--><img src="https://s3.us-east-2.amazonaws.com/rbsk/ready_beaulieu_saunders_and_kostin.png" style="max-width:800px"></span></h1>
-      <h3 style="color:#fff;">Reliable. Dependable. Trusted.</h3>
+      <h1 class="headline hidden-xs"><span><img src="https://s3.us-east-2.amazonaws.com/rbsk/ready_beaulieu_saunders_and_kostin.png" style="max-width:800px"></span></h1>
+      <h1 class="headline visible-xs"><span>READY<br>BEAULIEU<br>SAUNDERS<br>KOSTIN</span></h1>
+      <h3 class="hidden-xs" style="color:#fff;">Reliable. Dependable. Trusted.</h3>
     </div>
-    <div class="side-copy" style="position: absolute; left: 25%; top: 400px; width: 50%; padding: 20px 40px; background: rgba(255,255,255,0.6); text-align:center; border-radius: 6px;">
+    <div class="side-copy">
       			  <p style="font-family:Spectral !important;font-size:22px;color:#333;">
 			    At RBSK Law Offices, our clients come first.</p>
 			  <p style="font-family:Spectral !important;font-size:18px;color:#333;">With over 20 years of experience, our clients include more than 15 large hospitals in Eastern Massachusetts. Our team of dedicated attorneys offers assistance to individuals as well as organizations in a wide variety of practice areas.</p>
 
     </div>
   </div>
-  <div class="section-2" style="background:#C89F43;padding-top:50px;padding-bottom:50px;">
+  <div class="section-2">
       <div class="container" style="text-align:center;">
-        <h2 class="brand" style="line-height:1.1em;padding: 0 0 10px; font-size: 45px; font-weight:400; font-family: 'gotham_lightregular',Arial,Helvetica,sans-serif;color: #fff;">Who We Serve</h2>
+        <h2 class="brand" >Who We Serve</h2>
         <h2 style="line-height:1.1em;padding: 0 0 30px; font-size: 30px; font-weight:500; font-family: 'gotham_lightregular',Arial,Helvetica,sans-serif;color: #fff;">Our clients are our first priority</h2>
         <div class="row" style="color:#fff;">
           <div class="col-md-4">
@@ -35,80 +36,73 @@
           </div>
         </div>
 
-
-
       </div>
     </div>
     <div class="section-2b" style="text-align: center;padding: 30px;">
         <div style="font-size:20px;color:#777;">Can RBSK Law Offices help me? <%= link_to "Find Out Here", practices_path, class: "btn btn-primary" %></div>
     </div>
-  <div class="section-5" style="position:relative;">
+  <div class="section-5">
 
     <img src="https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/estate_planning_elder_law_rbsk.jpg" height="800px" width="100%">
-    <div class="copy" style="top: 50%;margin-top:-180px;text-align:center;color:#fff;position:absolute;text-align:center;width:100%;">
+    <div class="our-services">
       <h2 style="max-width: 800px; margin: 0 auto 20px;">Our Services</h2>
       <p style="max-width:800px;margin: 0 auto 20px;">
 Seeking assistance with real estate, probate litigation, guardianship/conservatorship or fiduciary services? Our team of dedicated staff is there to cover any issues or concerns you may have. Read more about the services we provide to discover how we can best serve your needs.
 </p>
 
-      <div class="row" style="max-width:1100px; margin: 60px auto 0;">
-        <div class="col-md-2 col-sm-4">
+      <div class="row what-we-do">
+        <div class="col-md-2 col-sm-2">
 	  <%= link_to guardianship_practices_path do %>
 	  <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/gaurdianship_icon.png" style="width:100px;">
           <p class="home-link">Guardianship & Conservatorship</p>
 	  <% end %>
         </div>
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-2">
 	  <%= link_to mental_health_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/mental_health_icon.png" style="width:100px;"/>
           <p class="home-link">Mental Health Litigation</p>
 	  <% end %>
         </div>
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-2">
 	  <%= link_to estate_planning_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/estate_planning_admin_icon.png" style="width:100px;"/>
           <p class="home-link">Estate Planning & Elder Law</p>
 	  <% end %>
         </div>
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-2">
 	  <%= link_to probate_litigation_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/probate_litigation_icon.png" style="width:100px;"/>
           <p class="home-link">Probate Litigation</p>
 	  <% end %>
         </div>
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-2 hidden-xs">
 	  <%= link_to real_estate_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/real_estate_icon.png" style="width:100px;">
-	  <!--div class="real-estate-icon">
-	    <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/real_estate_icon.png" style="width:100px;">
-	    <div class="real-estate-icon-overlay">
-	    </div>
-	  </div-->
           <p class="home-link">Real Estate</p>
 	  <% end %>
         </div>
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-2 hidden-xs">
 	  <%= link_to personal_injury_practices_path do %>
           <img src="https://s3.us-east-2.amazonaws.com/rbsk/icons/personal_injury_icon.png" style="width:100px;"/>
           <p class="home-link">Personal Injury</p>
 	  <% end %>
         </div>
       </div>
-      <div class="view-platform-details" style="text-align:center;padding: 50px 0;">
+      <div class="view-platform-details">
 	<%= link_to "Learn More About Our Practice Areas", practices_path, class: "btn btn-primary" %>
       </div>
     </div>
   </div>
-  <div class="section-6" style="background:#fff; padding: 50px 0px;text-align:center;">
+  <div class="section-6">
     <h2 style="color:#193d7d;">About Us.</h2><br/>
-	<p style="max-width:800px;text-align:center;margin:0px auto;">Our clients are our first priority.<br><br> As a team of attorneys, we are able to work collaboratively, together and with our clients, to determine the ideal legal strategy for each particular case. We seek to provide first-class counsel to individuals as well as organizations in areas including estate planning, family law, probate law, elder and disability law, and civil litigation, as well as providing fiduciary services and advice to closely held corporations. <br><br>Engaging RBSK Law Offices for your legal needs provides you with a team of professionals who strive for excellence in each case.</p>
+	<p>Our clients are our first priority.<br><br> As a team of attorneys, we are able to work collaboratively, together and with our clients, to determine the ideal legal strategy for each particular case. We seek to provide first-class counsel to individuals as well as organizations in areas including estate planning, family law, probate law, elder and disability law, and civil litigation, as well as providing fiduciary services and advice to closely held corporations. <br><br>Engaging RBSK Law Offices for your legal needs provides you with a team of professionals who strive for excellence in each case.</p>
 
         <div style="text-align:center;margin-top:20px;">
 	<%= link_to "Meet Our Team", partners_path, class: "btn btn-primary-blue-inverse" %>
       </div>
 
   </div>
-    <div class="section-4b" style="margin-top:50px;">
+    <div class="section-4b hidden-xs" style="margin-top:50px;">
       <div class="quote">
         <h2 style="color:#fff;">What Others Are Saying About Us </h2>
 				<h4 style="color:#fff;padding-top:10px;padding-bottom:10px;padding-right:40px;">"Matthew Beaulieu has provided top notch legal services to hospitals throughout the Partners HealthCare System including Brigham & Women’s and Faulkner Hospitals. His representation has resulted in excellent results for both the hospitals and the patients they serve, ensuring that care and discharge are appropriate and efficient, and that patients obtain ongoing care in the most appropriate setting."</h4>
@@ -117,5 +111,4 @@ Seeking assistance with real estate, probate litigation, guardianship/conservato
         <p style="color:#fff;">— Joshua Abrams, Senior Attorney</p>
       </div>
     </div>
-    
 

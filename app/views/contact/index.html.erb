@@ -1,8 +1,12 @@
 <div class="sections">
   <div class="section-1">
     <img class="section-1-img"/>
-		<div class="banner">
+		<div class="banner hidden-xs">
 			<img src="https://s3.us-east-2.amazonaws.com/rbsk/ready_beaulieu_saunders_and_kostin.png" style="max-width:800px">
+			<h1 class="headline">Contact Us</h1>
+		</div>
+		<div class="banner visible-xs">
+			<!--span>READY<br>BEAULIEU<br>SAUNDERS<br>KOSTIN</span-->
 			<h1 class="headline">Contact Us</h1>
 		</div>
     <div class="canvas">
@@ -10,7 +14,7 @@
     </div>
   </div>
 
-  <div class="section-2" style="background:#C89F43;padding-top:0px;padding-bottom:50px;">
+  <div class="section-2 hidden-xs" style="background:#C89F43;padding-top:0px;padding-bottom:50px;">
     <div class="container"> </div>
   </div>
 
@@ -39,7 +43,7 @@
       </div>
 
 
-      <div class="col-md-6">
+      <div class="col-md-6 hidden-xs">
 	<h2 style="font-size:28px;font-family:Oswald;"> Or, We'll Get Back To You</h2>
 	<%= simple_form_for(Contact.new, url: contact_index_path, method: :post, html: {class: "contact-form"}) do |f| %>
 				<%= f.input :name %>
