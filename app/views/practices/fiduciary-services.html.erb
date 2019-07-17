@@ -1,10 +1,10 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
-
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/legal-document.jpg');background-size:cover;background-position: 100% 50%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/legal-document.jpg');background-size:cover;background-position: 100% 50%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,7 +17,7 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-sm hidden-xs">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -57,6 +57,51 @@
 
 
     </div>
+
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+
+	<div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="font-size:28px;font-family:Amiri;color:#08152b;">Helping You Help Your Loved Ones.<br><br></p>
+
+          <div style="width:90%;">
+
+	    <p class="area-detail">We proudly cover service areas including trustee services, guardianship/conservatorship services, personal representative services, power of attorney services, health care agent services and escrow agent services. </p>
+
+	    <p class="area-section">What Is A Fiduciary?</p>
+	    <p class="area-detail">A fiduciary is a person or institution with the legal authority to manage money or property for the benefit of another. The fiduciary is held to a high standard of care in carrying out their responsibilities. Examples of fiduciaries include personal representatives, administrators, conservators, executors, guardians and trustees.
+	    <p class="area-section">How We Can Help</p>
+	    <p class="area-detail">At RBSK Law Offices, we assist our clients with the process of understanding the process of selecting a fiduciary and understanding your options. Our experienced attorneys provide trustee services, guardianship/conservatorship services, personal representative services, power of attorney services, health care agent services and escrow agent services. </p>
+
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item right-nav-item-active"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
 
     <div style="clear:both;"></div>
 
