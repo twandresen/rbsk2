@@ -1,10 +1,11 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
 
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/real-estate.jpg');background-size:cover;background-position: 25% 50%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/real-estate.jpg');background-size:cover;background-position: 25% 50%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,7 +18,7 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -46,7 +47,7 @@
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Services We Offer</p>
           <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
-          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></a></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
@@ -59,6 +60,52 @@
 
 
     </div>
+
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">Whether You're Buying, Selling or Somewhere Inbetween.<br><br></p>
+
+          <div style="width:90%;">
+
+	    <p class="area-detail">For many people, a real estate purchase is the largest purchase they will make in their lifetime. When you've found that house of your dreams, you want the process to close on it to go smoothly. And when you're the seller, you also want a fast and easy closing. Working with an experienced real estate attorney can help make that happen. 
+	    <p class="area-section">Representing Buyers and Sellers</p>
+	    <p class="area-detail">Whether this is your first home purchase or your fifth, you want to make sure you are protected when making your purchase. We work with buyers and sellers to negotiate purchase and sale agreements, to conduct title examinations, review closing documents and to provide representation at closing to ensure a smooth process. You may be selling one home and purchasing another on the same day or in very close succession. In those cases, it's important the process moves along as scheduled. We review all your documents early to make sure no surprises can hold you up at the wrong moment.</p>
+	    <p class="area-section">Fiduciary Sales</p>
+	    <p class="area-detail">RBSK provides fiduciary sales services to negotiate purchase and sale agreements for real estate as well as reviewing closing documents and executing the closing. In some cases, additional issues arise related to titles or licenses for sale. We can assist with obtaining licenses for sale, preparing deeds, resolving title deficiencies and obtaining land court approvals as needed.</p>
+	    <p class="area-section">Land Disputes and Missing Probate</p>
+	    <p class="area-detail">Unfortunately sometimes issues arise when you are looking to purchase or sell real estate. We have experience with these matters and can help address issues related to land disputes or property issues related to missing probate. Our services include petitions to partition, equity partition to determine ownership of land and preparation of probate petitions necessary to obtain clear title for sale.</p>
+	    <p class="area-detail">If you are considering buying or selling property or have questions about real estate related to an estate, contact us to see how we can help.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item right-nav-item-active"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
+
 
     <div style="clear:both;"></div>
 

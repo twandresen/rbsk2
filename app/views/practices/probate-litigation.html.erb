@@ -1,10 +1,10 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
-
-
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/probate-litigation.jpg');background-size:cover;background-position: 25% 50%;border-bottom:60px solid #112a55;">
+  </div>
+  
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/probate-litigation.jpg');background-size:cover;background-position: 25% 50%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,7 +17,7 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -45,7 +45,7 @@
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Services We Offer</p>
           <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
-          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></a></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
@@ -58,6 +58,49 @@
 
 
     </div>
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">Covering estates, trusts, equity, real estate and more.<br><br></p>
+
+          <div style="width:90%;">
+
+	    <p class="area-detail">When a loved one passes away, the last thing on your mind might be estate administration. Even when there is a will, the probate process can take up to year to complete. Understanding what's involved in this process is the first step. Learning how we can help to make it more efficient is the next step. </p>
+	    <p class="area-section">The Probate Process</p>
+	    <p class="area-detail">Probate begins when a petition is filed and an executor is appointed for the will or estate. Time will be given to creditors to make claims against the estate. All assets including real estate, personal investment accounts and property needs to be assessed. This process can be time-consuming. All debts and any claims made against the estate will need to be settled. Only once all of this is completed and documented with the probate court can the estate be closed and assets distributed. It's important for all family members to understand the process and the timing so that it is clear why any assets may not be immediately available for use.</p>
+	    <p class="area-section">Special Circumstances</p>
+	    <p class="area-detail">In some cases, the probate process may involve more complicated issues related to trusts, real estate, guardianships, conservatorship, or health care proxy disputes. These matters can add to the complexity of the probate process and extend the time to settle the estate significantly.</p>
+	    <p class="area-section">How We Can Help</p>
+	    <p class="area-detail">At RBSK, we have many years experience with complicated estate-related issues as well as the special circumstances that can be related to settling an estate. Our attorneys have experience challenging and defending wills, filing petitions to compromise a will, handling insolvent estates, filing civil suits involving estates, in addition to probate of an estate and closing an estate. We also have experience with trusts related to estate matters including petitions to modify or reform a trust, petitions to terminate trusts and various other trust-related matters. As part of the probate process, we have provided representation for the sale of real estate for individuals as well conservators and trustees. We have represented petitioners and those objecting to petitions in contested matters related to guardianship or conservatorship as part of the probate process. And we have attended special proceedings to resolve health care proxy disputes that arise are part of the probate process. In short, RBSK can provide complete probate litigation services for your family. Contact us to learn more.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item right-nav-item-active"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
 
     <div style="clear:both;"></div>
 
