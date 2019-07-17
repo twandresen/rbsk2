@@ -1,10 +1,10 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
-
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/estate-planning.jpg');background-size:cover;background-position: 25% 80%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/estate-planning.jpg');background-size:cover;background-position: 25% 80%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,7 +17,7 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -62,6 +62,56 @@
 
 
     </div>
+
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="font-size:28px;font-family:Amiri;color:#08152b;">Estate Planning Is For Everyone<br><br></p>
+
+          <div style="width:90%;">
+
+            <p class="area-detail">Whether large or small, everyone has an estate. It is in your best interests to make a plan for how the items in your estate are managed and distributed should you become incapacitated or die. Many people put off creating an estate plan thinking that they have plenty of time. But accidents happen and it's always better to be prepared. That's where RBSK Law Offices ca n help.</p>
+
+	    <p class="area-section">What Is An Estate?</p>
+	    <p class="area-detail">Your estate is everything you own. This includes your house, car, personal possessions, investments and life insurance. Whether your estate is large or small, you probably want to have some say as to where your assets go when you are gone.</p>
+	    <p class="area-section">Estate Planning 101</p>
+	    <p class="area-detail">A good estate plan will do more than say who receives the items in your estate. Working with a good attorney will ensure that all your concerns are addressed. You may need to provide details on guardianship for minor children. You may want to include specific guidelines for how any inheritance received is utilized. You may want to provide special protections for family members that are disabled or need special assistance. If you own a business, you may need to address issues related to succession planning in the event of your retirement or disability. And most of the time, you want to make sure the transfer of your assets can occur while minimizing taxes, court costs and any unnecessary legal fees.</p>
+	    <p class="area-section">Consequences Of Not Planning</p>
+	    <p class="area-detail">If you don't have a plan, the consequences for your family should you become disabled or die, can be devastating. If you are disabled and can no longer make financial  decisions, the courts may decide how your assets are used through a conservatorship, rather than having a family member you designate make these decisions. At your death, without an estate plan, your assets will be distributed by the courts according to state law. This may result in your assets not going to the people you most want to benefit. Additionally, this process can be expensive and lengthy, taking funds away from your family unnecessarily.</p>
+	    <p class="area-section">How We Can Help</p>
+	    <p class="area-detail">At RBSK Law Offices, we are experienced in preparing new estate plans as well as reviewing existing plans. We can work with you to create wills, trusts, powers of attorney, health care proxy, living wills, HIPPA releases and real estate deeds. We can also offer services for planning for long-term care and administration of an estate including probate of a will, probate of an estate without a will, simple estate administration, compromise a will, preparation of estate accounts and closing an estate.</p>
+	    <p class="area-detail">We work with all individuals needing estate planning services including new adults, families, seniors and service members. Contact us to learn more about how we can help with your estate planning needs.</p>
+
+	  </div>
+
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item right-nav-item-active"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
+
 
     <div style="clear:both;"></div>
 
