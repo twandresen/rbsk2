@@ -1,10 +1,11 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
 
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/health_care_proxy_term.jpg');background-size:cover;background-position: 25% 80%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/health_care_proxy_term.jpg');background-size:cover;background-position: 25% 80%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,7 +18,7 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -47,7 +48,7 @@
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Services We Offer</p>
           <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
-          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></a></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
           <p class="right-nav-item right-nav-item-active"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
@@ -60,6 +61,53 @@
 
 
     </div>
+
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">Covering a Variety of Petitions and Assistance.<br><br></p>
+
+          <div style="width:90%;">
+
+	    <p class="area-detail">We cover a variety of guardianship and conservatorship services to meet your needs. Understanding the difference between guardianship and conservatorship and when and how they are needed is the first step in the process.
+
+	    <p class="area-section">What Is A Guardian?</p>
+	    <p class="area-detail">A guardian is an individual appointed by the court to make medical and health care related decisions for an individual who is unable to make or communicate informed decisions.</p>
+	    <p class="area-section">What Is a Conservator?</p>
+	    <p class="area-detail">A conservator is an individual appointed by the court to manage property, financial and business affairs of an individual who is unable to make or communicate informed decisions or who is detained or otherwise unable to return to the United States.
+	    <p class="area-section">How We Can Help</p>
+	    <p class="area-detail">We process hundreds of Guardianship/Conservatorship cases each year. We work with families, health care professionals and attorneys to quickly and effectively meet the needs of individuals requiring protection from a guardian or conservator. Some of our services include new guardianship petitions, petitions to expand existing guardianship, assistance with Guardian Care Plan Reports, petitions to limit or terminate a guardianship, new conservatorship petitions, petitions to expand existing conservatorship, petitions for special conservatorship authorities including estate planning for the protected person, supplemental needs or pooled trust assistance and sale of protected persons real estate.</p>
+	    <p class="area-detail">We have many years experience in handling guardianship and conservatorship cases and work with many of the healthcare organizations throughout the state of Massachusetts to assist on these cases. Contact us to learn more about our services.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item right-nav-item-active"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
+
 
     <div style="clear:both;"></div>
 
