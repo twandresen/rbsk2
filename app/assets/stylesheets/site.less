@@ -59,6 +59,16 @@ body	{
 		}
 	}
 
+	.navbar-brand {
+		@media (max-width: @screen-sm-max) {
+			height:100px;
+		}
+		@media (max-width: @screen-xs-max) {
+			height:50px;
+		}
+	}
+
+
 	.section-2	{
 		background:#C89F43;padding-top:50px;padding-bottom:50px;
 	}
@@ -814,7 +824,7 @@ body	{
     }
 
     .navbar-collapse.collapse {
-        display: block !important;
+        //display: block !important;
         height: auto !important;
         padding-bottom: 0;
         overflow: visible !important;
