@@ -1,10 +1,11 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
 
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/service-member-2.jpg');background-size:cover;background-position: 50% 60%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/service-member-2.jpg');background-size:cover;background-position: 50% 60%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:right;">
         <div style="background:#333;opacity:0.7;padding-right:80px;padding-top:6px;padding-bottom:6px;">
@@ -18,9 +19,7 @@
 
 
     <!--span class="circle"></span-->
-    <div style="width:100%">
-
-
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -28,7 +27,7 @@
 
           <div style="width:80%;">
 
-            <p class="area-detail">First, we at RBSK Law Offices would like to say thank you to all of our current and former members of the armed forces for their service. We are forever grateful.</p>
+            <p class="area-detail">First, we at Ready, Beaulieu, Saunders & Kostin LLP would like to say thank you to all of our current and former members of the armed forces for their service. We are forever grateful.</p>
             <p class="area-detail">We are pleased to offer a number of services including estate planning, real estate services, representation of your interests while on active duty and assistance with disabilities.
             </p>
 
@@ -56,18 +55,67 @@
       <div class="service-menu">
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Who We Serve</p>
-          <p class="right-nav-item"><a href="attorneys">Attorneys</a></p>
-          <p class="right-nav-item"><a href="health-care-providers">Health Care Providers</a></p>
-          <p class="right-nav-item"><a href="families">Families</a></p>
-          <p class="right-nav-item"><a href="new-adults">New Adults</a></p>
-          <p class="right-nav-item"><a href="seniors">Seniors</a></p>
-          <p class="right-nav-item right-nav-item-active"><a href="service-members">Service Members</a></p>
+          <p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Families", families_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("New Adults", new_adults_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+          <p class="right-nav-item right-nav-item-active"><%= link_to("Service Members", service_members_practices_path) %></p>
         </div>
       </div>
 
 
     </div>
 
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:30px;font-size:28px;font-family:Amiri;color:#08152b;">Whether You Are a Veteran or Still Actively Serving, We Can Help.<br><br></p>
+
+          <div style="width:90%;">
+
+            <p class="area-detail">First, we at Ready, Beaulieu, Saunders & Kostin LLP would like to say thank you to all of our current and former members of the armed forces for their service. We are forever grateful.</p>
+            <p class="area-detail">We are pleased to offer a number of services including estate planning, real estate services, representation of your interests while on active duty and assistance with disabilities.
+            </p>
+
+            <p class="area-section">Estate Planning</p>
+            <p class="area-detail">We recommend that all of our clients establish at least a basic estate plan. This includes a Simple Last Will and Testament, a Power of Attorney and a Health Care Proxy (with Living Will). A Will sets forth your instructions as to what happens to your property after you pass. A Power of Attorney is a document used to name someone who will take care of your bank accounts and other assets during your lifetime if you become unable to do so yourself or if you would prefer delegating the bill paying to someone else.</p>
+            <p class="area-detail">A Health Care Proxy (with Living Will) is by far the most important estate planning document. You can use a Health Care Proxy to name an individual who will make medical treatment decisions for you in the event you became unable to do so yourself. With a Living Will attached, you can give instructions as to what type of medical treatments you want and what types you do not want in the event of accident or serious injury. We are pleased to offer service members a basic estate plan with a Simple Will, Power of Attorney and Health Care Proxy (with Living Will) for a modest fixed price. Please call or email for details.</p>
+            <p class="area-section">Real Estate Services</p>
+            <p class="area-detail">We can help service members with questions concerning their homes and other real estate. If you are being transferred or looking to move to a more suitable home we can assist with the sale or purchase of your Massachusetts real estate. If you think you might not be able to attend the closing, we can prepare a Power of Attorney so that someone can sign the papers for you.</p>
+            <p class="area-detail">If you plan on staying in your home for a while we can assist with a Declaration of Homestead. We can also help with rental agreements if you plan on returning to your home after an extended tour away.</p>
+            <p class="area-section">Your Interests While On Active Duty</p>
+            <p class="area-detail">We are available to assist with representation of your interests while on active duty. If you plan on being away on active duty but need some help with legal issues in Massachusetts, call us.</p>
+            <p class="area-detail">We will work with you to develop a plan to protect your interests.</p>
+            <p class="area-section">Assistance With Disabilities</p>
+            <p class="area-detail">If you or a loved one needs assistance with the essential requirements for health, safety or welfare, or if help with financial matters is needed, we can assist in a variety of ways including establishment of special needs trusts, creation of powers of attorney and health care proxies, guardianships, conservatorships and fiduciary services.</p>
+            <p class="area-detail">Not sure what you need? Call and we will help sort things out.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Who We Serve</p>	
+      </div>
+      <div style="width:100%;">
+        <p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Families", families_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("New Adults", new_adults_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+        <p class="right-nav-item right-nav-item-active"><%= link_to("Service Members", service_members_practices_path) %></p>
+      </div>
+      
+    </div>
+
+
+    
     <div style="clear:both;"></div>
 
     <div style="width:100%;background:#112a55;height:60px;"></div>

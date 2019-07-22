@@ -1,10 +1,10 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
-
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/family_outside.jpg');background-size:cover;background-position: 25% 15%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/family_outside.jpg');background-size:cover;background-position: 25% 15%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:right;">
         <div style="background:#333;opacity:0.7;padding-right:80px;padding-top:6px;padding-bottom:6px;">
@@ -18,9 +18,7 @@
 
 
     <!--span class="circle"></span-->
-    <div style="width:100%">
-
-
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -28,7 +26,7 @@
 
           <div style="width:80%;">
 
-            <p class="area-detail">The typical family does not need to have a lawyer on retainer but all families should consult with an attorney regarding several very important issues.<br><br>At RBSK Law Offices, we have families too. Like you, we want to protect our loved ones, improve our lives and perhaps try to leave something for the next generation.<br><br>To help do this we recommend that every adult consult with a legal professional in several key areas: Estate Planning, Real Estate Transactions, and Preventative Steps to Protect your Family.</p>
+            <p class="area-detail">The typical family does not need to have a lawyer on retainer but all families should consult with an attorney regarding several very important issues.<br><br>At Ready, Beaulieu, Saunders & Kostin LLP, we have families too. Like you, we want to protect our loved ones, improve our lives and perhaps try to leave something for the next generation.<br><br>To help do this we recommend that every adult consult with a legal professional in several key areas: Estate Planning, Real Estate Transactions, and Preventative Steps to Protect your Family.</p>
             <p class="area-section">Estate Planning</p>
 
             <p class="area-detail">Death is inevitable. We cannot know where and when it may occur but we can control, in many respects, how it will affect those you leave behind.  With proper planning, you can take steps to provide for the care of your spouse. You can leave a legacy to your children. You can ensure the care of minors. You can remember your favorite charity. A basic estate plan includes a Last Will and Testament.  An effective estate plan, however, must be personalized. Accordingly, before we begin to draft your plan, we will ask a number of questions about your current situation, your future goals and the people who form your family.  From there, we design a plan to meet your expectations, select the appropriate legal documents and explain how everything works.</p>
@@ -55,17 +53,68 @@
       <div class="service-menu">
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Who We Serve</p>
-          <p class="right-nav-item"><a href="attorneys">Attorneys</a></p>
-          <p class="right-nav-item"><a href="health-care-providers">Health Care Providers</a></p>
-          <p class="right-nav-item right-nav-item-active"><a href="families">Families</a></p>
-          <p class="right-nav-item"><a href="new-adults">New Adults</a></p>
-          <p class="right-nav-item"><a href="seniors">Seniors</a></p>
-          <p class="right-nav-item"><a href="service-members">Service Members</a></p>
+          <p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+          <p class="right-nav-item right-nav-item-active"><%= link_to("Families", families_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("New Adults", new_adults_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Service Members", service_members_practices_path) %></p>
         </div>
       </div>
 
 
     </div>
+
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">We Are Here to Help You Protect Your Loved Ones<br><br></p>
+
+          <div style="width:90%;">
+
+            <p class="area-detail">The typical family does not need to have a lawyer on retainer but all families should consult with an attorney regarding several very important issues.<br><br>At Ready, Beaulieu, Saunders & Kostin LLP, we have families too. Like you, we want to protect our loved ones, improve our lives and perhaps try to leave something for the next generation.<br><br>To help do this we recommend that every adult consult with a legal professional in several key areas: Estate Planning, Real Estate Transactions, and Preventative Steps to Protect your Family.</p>
+            <p class="area-section">Estate Planning</p>
+
+            <p class="area-detail">Death is inevitable. We cannot know where and when it may occur but we can control, in many respects, how it will affect those you leave behind.  With proper planning, you can take steps to provide for the care of your spouse. You can leave a legacy to your children. You can ensure the care of minors. You can remember your favorite charity. A basic estate plan includes a Last Will and Testament.  An effective estate plan, however, must be personalized. Accordingly, before we begin to draft your plan, we will ask a number of questions about your current situation, your future goals and the people who form your family.  From there, we design a plan to meet your expectations, select the appropriate legal documents and explain how everything works.</p>
+            <p class="area-detail">Estate Planning is not all about planning for the end. There may come a time when you lack capacity to make or communicate decisions. This could result from age, illness or injury. At such a time, you want to ensure that you have designated someone to make these decisions for you so that your needs are met and, as appropriate, to ensure that your loved ones are cared for and protected. This can be accomplished by executing certain key legal documents in advance of any personal setbacks. At a minimum, all adults should have a Health Care Proxy.</p>
+            <p class="area-detail">Estate planning is not reserved for seniors. Any competent adult over the age of 18 can execute estate planning documents. Even new adults should have a Health Care Proxy.  In most cases parents will NOT have legal authority to make medical decisions for their adult children.  Often times, failing to adequately plan in advance can result in lengthy court proceedings which may not yield the desired results.</p>
+            <p class="area-section">Protecting Your Family</p>
+            <p class="area-detail">There are certain basic steps that members of every family should consider “just in case.”  In the event that a spouse or parent suffers an accident or illness, a Health Care Proxy will ensure that vital medical decisions can be made quickly. A Power of Attorney can be used to help a senior manage monthly bills. A declaration of Homestead can protect the equity in your home from many creditors. Trusts can help protect disabled children as they become adults. Limited Liability Companies can limit your risk of loss if you own rental property.  We recommend a “legal check-up” every few years to see whether you are doing everything you should to protect your family and your property.
+            </p>
+            <p class="area-detail">We also have experience helping to protect seniors who are being abused, neglected, or financially exploited.  We can help assess the problem, assist in obtaining physical protection, secure the appointment of surrogate decision makers where necessary and make efforts to recover assets.
+</p>
+
+            <p class="area-section">Real Estate</p>
+            <p class="area-detail">We have a number of years of experience in handling the legal issues related to real estate. We have represented buyers, sellers and financial institutions.</p>
+            <p class="area-detail">We can help you negotiate a purchase and sales agreement, address title issues, and prepare or review closing documents.</p>
+            <p class="area-detail">We also have extensive knowledge of real estate in the probate arena.  If you inherited a house, inherited a share of a house or have an interest in a house held in trust or in common with another individual, we can help you understand your rights and guide you toward a viable resolution.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Who We Serve</p>	
+      </div>
+      <div style="width:100%;">
+	<p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+        <p class="right-nav-item right-nav-item-active"><%= link_to("Families", families_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("New Adults", new_adults_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Service Members", service_members_practices_path) %></p>
+      </div>
+      
+    </div>
+
+
+
+
 
     <div style="clear:both;"></div>
 

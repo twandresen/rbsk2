@@ -4,6 +4,18 @@
 
 body.practices{
 
+  .practices-headline {
+    width:100%;position:relative;display:block;margin-top:140px;height:auto;
+
+    @media (max-width: @screen-sm-max) {
+	    margin-top:100px;
+    }
+    @media (max-width: @screen-xs-max) {
+	    margin-top:50px;
+    }
+  }
+
+
 .secondary-nav {
 width:100%;
 max-width:100%;
@@ -17,6 +29,17 @@ box-shadow: inset 0px 0px 50px 20px #193d7d;
   a { color: #fff; }
   a:hover { text-decoration: none; }
 
+ 	@media (max-width: @screen-sm-max) {
+	padding-top:40px;
+	height: 100px;
+ 	}
+
+ 	@media (max-width: @screen-xs-max) {
+	padding-top:40px;
+	height:100px;
+ 	}
+
+
 }
 
 .secondary-nav > p {
@@ -25,6 +48,14 @@ font-size: 32px;
 color: #fff;
 text-align: left;
 margin-left: 60px;
+
+  @media (max-width: @screen-sm-max) {
+    margin-left:20px;
+  }
+  @media (max-width: @screen-xs-max) {
+    margin-left:20px;
+  }
+
 }
 
 .secondary-nav > p > a {
@@ -372,6 +403,15 @@ text-decoration: none;
   color:#c89f42;
   }
 
+  .right-nav-heading-mobile {
+  padding-left:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family: Oswald;
+  font-size:24px;
+  color:#fff;
+  }
+
   .right-nav-item {
   padding-left:24px;
   padding-top:10px;
@@ -393,6 +433,7 @@ text-decoration: none;
   .right-nav-item > a:hover {
   color: #193d7d;
   opacity: 0.7;
+  text-decoration: none;
   }
 
   .right-nav-item-active {
@@ -403,6 +444,12 @@ text-decoration: none;
   background: linear-gradient(#efefef,#fff);
   overflow:hidden;
   width:70%;
+
+    @media (max-width: @screen-sm-max) {
+      width:100%;
+      background: #fff;
+    }
+
   }
 
   .header .top-nav .navbar-nav > li > a:hover {

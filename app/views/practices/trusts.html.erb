@@ -1,10 +1,10 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
-
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/trust.jpg');background-size:cover;background-position: 25% 50%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/trust.jpg');background-size:cover;background-position: 25% 50%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,7 +17,7 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
@@ -42,7 +42,7 @@
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Services We Offer</p>
           <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
-          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></a></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
@@ -53,8 +53,49 @@
         </div>
       </div>
 
-
     </div>
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">Trusts Come in A Variety of Flavors.<br>We Can Help You Decide What's Right For Your Family.<br><br></p>
+
+          <div style="width:90%;">
+
+	    <p class="area-detail">Trusts can be simple or complex and can be created for a variety of reasons. There are revocable living trusts, irrevocable trusts, testamentary trusts, real estate trusts, special needs trusts, etc. Depending on your situation, there can be many advantages to establishing a trust. One of the most common reasons to establish a trust is to pass assets to your heirs without the need for probate. There can also be tax advantages and other financial incentives to establishing a trust. Trusts can be established as part of your estate plan to specifically protect your family or business in the event of your death. 
+	    <p class="area-section">How We Can Help</p>
+	    <p class="area-detail">We cover a variety of trust services including reviews of existing trusts as well as trust preparation services for estate planning trusts, testamentary trusts, supplemental needs trusts, real estate trusts, revocable trusts and irrevocable trusts. </p>
+	    <p class="area-detail">We also cover revisions of amendments to existing trusts, assistance with trust accounting, assistance with changes in trustees, termination of existing trusts, court petitions to interpret ambiguous trusts, reform or change trusts, enforce provisions of a trust, remove an unsuitable trustees, demand a trust account and/or to challenge a trustees account.</p>
+	    <p class="area-detail">Once we have a good understanding of your specific situation, we can work with you to determine what type of trust would benefit you the most. Contact us to learn more.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item right-nav-item-active"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
+
 
     <div style="clear:both;"></div>
 

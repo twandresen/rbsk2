@@ -1,10 +1,11 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
 
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/medical_professional.jpg');background-size:cover;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/medical_professional.jpg');background-size:cover;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:right;">
         <div style="background:#333;opacity:0.7;padding-right:80px;padding-top:6px;padding-bottom:6px;">
@@ -18,8 +19,7 @@
 
 
     <!--span class="circle"></span-->
-    <div style="width:100%">
-
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
 
       <div id="services-offered-sub" class="service-group">
@@ -50,18 +50,61 @@
       <div class="service-menu">
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Who We Serve</p>
-          <p class="right-nav-item"><a href="attorneys">Attorneys</a></p>
-          <p class="right-nav-item right-nav-item-active"><a href="health-care-providers">Health Care Providers</a></p>
-          <p class="right-nav-item"><a href="families">Families</a></p>
-          <p class="right-nav-item"><a href="new-adults">New Adults</a></p>
-          <p class="right-nav-item"><a href="seniors">Seniors</a></p>
-          <p class="right-nav-item"><a href="service-members">Service Members</a></p>
+          <p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+          <p class="right-nav-item right-nav-item-active"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Families", families_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("New Adults", new_adults_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Service Members", service_members_practices_path) %></p>
         </div>
       </div>
 
 
     </div>
 
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">20+ Years of Patient Care Services<br><br></p>
+
+          <div style="width:90%;">
+
+            <p class="area-detail">We understand that patient care is often improved by swift action at the courthouse.<br><br> We are in probate courts throughout the Commonwealth, often on a weekly basis. We have strong relationships with court personnel and judges and we know the unique procedures and requirements of each court. In most cases, we are able to move these cases through the court system expeditiously. In special circumstances we have had success holding emergency hearings at the hospital. When necessary, we have also represented our clients at the Massachusetts Appeals Court and Supreme Judicial Court. Under the direction of our clients, we ensure that all court proceedings are carried forward to a logical end, typically either a permanent decree or a dismissal following the recovery of the patient. We have a good working relationship with counsel for state agencies including the Department of Mental Health and the Department of Developmental Services and we are familiar with most attorneys providing legal services to nursing homes in Eastern Massachusetts. These relationships facilitate coordinated care of patients and can aid in swiftly obtaining emergency treatment orders. We are mindful that expedient processing of these cases also frees resources for other patients.</p>
+            <p class="area-section">Guardianships & Conservatorships</p>
+
+            <p class="area-detail">We process hundreds of cases a year. We ensure good patient care by assisting in obtaining surrogate decision makers for incapacitated patients. We do this by obtaining court appointed guardians and conservators. We make sure to pursue necessary adjunct authorities guardians may need. This may include authority to treat with antipsychotics, authority to admit patients to skilled nursing facilities, authority for extraordinary medical treatment and appropriate orders regarding advanced directives/end of life issues. If a patient has a health care proxy, we can bring necessary actions to resolve disputes.</p>
+            <p class="area-section">Civil Commmitments</p>
+            <p class="area-detail">We provide representation in civil commitment proceedings. We have handled cases involving seniors with dementia, premature infants, mentally ill individuals, individuals with developmental delays, individuals requiring emergency surgeries, individuals requiring amputations, patients with unborn children, patients objecting to care on religious grounds, patients with tendencies towards violence, end of life issues, patients with difficult family members, victims of elder abuse, victims of financial exploitation.
+            </p>
+
+            <p class="area-section">Employee Benefit Services</p>
+            <p class="area-detail">In coordination with your Human Resources Department, we are able to arrange for discounted legal services for your employees as an employee benefit.</p>
+            <p class="area-detail">We are pleased to offer our institutional clients the opportunity to establish a legal aid benefit for your employees. We can work with your human resources department to establish a program to provide a discount on legal services in areas including Estate Planning, Settlement of Estates, Real Estate Transactions and other services offered by our firm. Contact us for further information.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Who We Serve</p>	
+      </div>
+      <div style="width:100%;">
+	<p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+        <p class="right-nav-item right-nav-item-active"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Families", families_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("New Adults", new_adults_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Service Members", service_members_practices_path) %></p>
+      </div>
+      
+    </div>
+
+
+    
     <div style="clear:both;"></div>
 
     <div style="width:100%;background:#112a55;height:60px;"></div>

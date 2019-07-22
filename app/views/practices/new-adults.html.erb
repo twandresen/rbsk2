@@ -1,10 +1,10 @@
-<div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+<div class="practices-headline">
   <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+</div>
 
-
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/new-adult.jpg');background-size:cover;background-position: 100% 55%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/new-adult.jpg');background-size:cover;background-position: 100% 55%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:right;">
         <div style="background:#333;opacity:0.7;padding-right:80px;padding-top:6px;padding-bottom:6px;">
@@ -18,7 +18,7 @@
 
 
     <!--span class="circle"></span-->
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
 
 
@@ -65,17 +65,76 @@
       <div class="service-menu">
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Who We Serve</p>
-          <p class="right-nav-item"><a href="attorneys">Attorneys</a></p>
-          <p class="right-nav-item"><a href="health-care-providers">Health Care Providers</a></p>
-          <p class="right-nav-item"><a href="families">Families</a></p>
-          <p class="right-nav-item right-nav-item-active"><a href="new-adults">New Adults</a></p>
-          <p class="right-nav-item"><a href="seniors">Seniors</a></p>
-          <p class="right-nav-item"><a href="service-members">Service Members</a></p>
+          <p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Families", families_practices_path) %></p>
+          <p class="right-nav-item right-nav-item-active"><%= link_to("New Adults", new_adults_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Service Members", service_members_practices_path) %></p>
         </div>
       </div>
 
 
     </div>
+
+
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">You Are Legally An Adult. What Does That Mean For You?<br><br></p>
+
+          <div style="width:90%;">
+
+            <p class="area-detail">Turning 18 can be an exciting time. You are leaving behind your life as a child and growing into an adult. If you live in the United States, your 18th birthday marks your first day as an adult legally. Being a grown-up can come with new rights as well as many new responsibilities.</p>
+
+            <p class="area-section">Rights</p>
+            <p class="area-detail">As a new adult you are now able to vote, work full time, manage your income, live on your own, choose to go to college in another state, serve on a jury, run for elected office including Governor of Massachusetts, make a will, and buy, sell and own assets including cars, houses, stocks & bonds.</p>
+            <p class="area-section">Responsibilities</p>
+            <p class="area-detail">Staying out of trouble is even more important as an adult.</p>
+            <p class="area-detail">If you get in trouble with the police, you can be arrested and tried as an adult. If convicted you can go to prison.</p>
+            <p class="area-detail">Loans, bank accounts and lines of credit are now available to you.</p>
+            <p class="area-detail">As an adult you are eligible to apply for loans including credit cards. You are legally obligated to pay all debts that you incur.</p>
+            <p class="area-detail">Turning 18 means you can legally enter into a binding contract.</p>
+            <p class="area-detail">Binding contracts can be enforced by law. As an adult when signing a contract it is important that you fully understand the terms of the contract and understand the ramifications of not meeting your contractual obligations.</p>
+            <p class="area-detail">Yes, you can still live at home as an adult but there are some things you should know.</p>
+            <p class="area-detail">If you are 18 and plan to still live in your parents’ home, you are not above the rules. Just because by law you can do certain things doesn’t mean you can behave however you want in your parents’ house. Your parents own the property and they are no longer required by law to house you once you are an adult. It is to your benefit to sit down and talk to your parents and devise a set of rules that are comfortable for all of you.</p>
+
+            <p class="area-section">Serious Decisions</p>
+            <p class="area-detail">As a new adult you are now able to make some serious decisions.</p>
+            <p class="area-detail">You can now…play the lottery, serve in the military, marry without your parents consent in most states, consent to participate in a medical study, carry an organ donor card, purchase and use tobacco products in most states, choose to get tattoo or body piercing and you can also be sued if you don’t pay your debts or fulfill your obligations.</p>
+            <p class="area-section">Parents Lose Some Rights</p>
+            <p class="area-detail">With adulthood, so much is suddenly private after 18 years of so little being private. In most cases, parents will not be able to make medical treatment decisions for you.</p>
+            <p class="area-detail">Without your permission parents have no access to medical records, especially mental health records. They also have no access to substance abuse records.</p>
+            <p class="area-detail">Parents may also lose access to education records – including grades, schedules and financial accounts. The student’s permission is now needed for a parent to access this information. Tuition bills will go to the student, not the parent, regardless of who is paying. Parents cannot make financial decisions nor take control over an 18 year old’s assets.</p>
+            <p class="area-section">What You Can Now Do</p>
+            <p class="area-detail">Every person 18 years of age or older has a fundamental right to bodily integrity including the right to direct their own medical care and treatment. In Massachusetts, and many other states, the parent of a person over the age of 18 years of age, with very few limited exceptions, has no legal right or authority to make medical decisions for their 18 year old even if that person is unable to make decisions themselves. This is especially true with mental health issues and substance abuse issues. If you have not taken steps in advance and find yourself in the position where you need care or treatment but you are unable to give informed consent, you may become the subject of a guardianship petition at the probate court.</p>
+            <p class="area-detail">One way to manage your health care treatment plans is through the execution of a Health Care Proxy. This document will document the decision maker for you should you become incapacitated. It will also provide any guidance and instructions to that decision maker so that your choices are respected. We can work with you to document your preferred health care decisions so that you are protected in the event of illness. A supplement to the Health Care Proxy is the HIPPA Release which allows your designated decision maker access to your medical record information.</p>
+            <p class="area-detail">Similar to a Health Care Proxy, a Power of Attorney is a legal document which designates an individual to make financial decisions for you should you be unable to do so. There are a variety of options when drafting your Power of Attorney and we can help you decide what is right for you.</p>
+            <p class="area-detail">Having new responsibilities and rights is exciting, but it can also be stressful. We can work with you to make sure you know what your options are and what you need to do to make sure you are protected.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Who We Serve</p>	
+      </div>
+      <div style="width:100%;">
+        <p class="right-nav-item"><%= link_to("Attorneys", attorneys_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Health Care Providers", health_care_providers_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Families", families_practices_path) %></p>
+        <p class="right-nav-item right-nav-item-active"><%= link_to("New Adults", new_adults_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Seniors", seniors_practices_path) %></p>
+        <p class="right-nav-item"><%= link_to("Service Members", service_members_practices_path) %></p>
+      </div>
+      
+    </div>
+
+
 
     <div style="clear:both;"></div>
 

@@ -1,10 +1,11 @@
-  <div style="width:100%;position:relative;display:block;margin-top:140px;height:auto;">
+  <div class="practices-headline">
     <div class="secondary-nav">
       <p><%= link_to("Practice Areas", practices_path) %></p>
     </div>
+  </div>
 
 
-    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/mental-health.jpg');background-size:cover;background-position: 25% 80%;border-bottom:60px solid #112a55;">
+    <div class="hidden-xs hidden-sm" style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/mental-health.jpg');background-size:cover;background-position: 25% 80%;border-bottom:60px solid #112a55;">
 
       <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:left;">
         <div style="background:#333;opacity:0.7;padding-left:80px;padding-top:20px;padding-bottom:20px;">
@@ -17,19 +18,19 @@
     <!--div style="clear:both;"></div-->
 
 
-    <div style="width:100%">
+    <div style="width:100%" class="hidden-xs hidden-sm">
 
       <div id="services-offered-sub" class="service-group">
         <div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
-          <p style="font-size:28px;font-family:Amiri;color:#08152b;">Providing Meticulous Prepartion for Civil Commitments.<br><br></p>
+          <p style="font-size:28px;font-family:Amiri;color:#08152b;">Providing Meticulous Preparation for Civil Commitments.<br><br></p>
 
           <div style="width:80%;">
 
             <p class="area-section">Services for  Healthcare Professionals</p>
-	    <p class="area-detail">RBSK is counsel to psychiatric facilities in civil commitment and guardianship matters throughout Eastern Massachusetts. The firm also serves as outside associate counsel to several medical facilities, including major tertiary care centers. RBSK coordinates all civil commitment hearings with the various district courts, consults with attending physicians, and negotiates with opposing attorneys.</p>
+	    <p class="area-detail">Ready, Beaulieu, Saunders & Kostin LLP is counsel to psychiatric facilities in civil commitment and guardianship matters throughout Eastern Massachusetts. The firm also serves as outside associate counsel to several medical facilities, including major tertiary care centers. We coordinate all civil commitment hearings with the various district courts, consult with attending physicians, and negotiate with opposing attorneys.</p>
 	    <p class="area-section">Preparation and Experience</p>
 	    <p class="area-detail">Each case is meticulously prepared by our attorneys and staff. Preparation includes examining a patient's medical record and preparing attending physicians for trial, as well as meeting with interested family members. Our attorneys have tried over 4,500 civil commitment cases. We have unparalleled experience in all areas of mental health litigation, including statutory and regulatory interpretation, and complex evidentiary issues.</p>
-	    <p class="area-section">Working with RBSK</p>
+	    <p class="area-section">Working with Ready, Beaulieu, Saunders & Kostin LLP</p>
 	    <p class="area-detail">We have good working relationships not only with healthcare organizations but also with counsel for state agencies including the Department of Mental Health and the Department of Developmental Services. Our relationships and experience facilitates coordinated care of patients and can aid in expedient processing of cases. Contact us to learn how we can help.</p>
 
 	    
@@ -45,7 +46,7 @@
         <div style="margin-top:60px;">
           <p class="right-nav-heading">Services We Offer</p>
           <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
-          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></a></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
           <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
           <p class="right-nav-item right-nav-item-active"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
@@ -59,6 +60,48 @@
 
     </div>
 
+    <div class="visible-xs visible-sm">
+
+      <div id="services-offered-sub" class="service-group">
+        <div style="padding-left:20px;padding-top:20px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+          <p style="padding-right:20px;font-size:28px;font-family:Amiri;color:#08152b;">Providing Meticulous Preparation for Civil Commitments.<br><br></p>
+
+          <div style="width:90%;">
+
+            <p class="area-section">Services for  Healthcare Professionals</p>
+	    <p class="area-detail">Ready, Beaulieu, Saunders & Kostin LLP is counsel to psychiatric facilities in civil commitment and guardianship matters throughout Eastern Massachusetts. The firm also serves as outside associate counsel to several medical facilities, including major tertiary care centers. We coordinate all civil commitment hearings with the various district courts, consult with attending physicians, and negotiate with opposing attorneys.</p>
+	    <p class="area-section">Preparation and Experience</p>
+	    <p class="area-detail">Each case is meticulously prepared by our attorneys and staff. Preparation includes examining a patient's medical record and preparing attending physicians for trial, as well as meeting with interested family members. Our attorneys have tried over 4,500 civil commitment cases. We have unparalleled experience in all areas of mental health litigation, including statutory and regulatory interpretation, and complex evidentiary issues.</p>
+	    <p class="area-section">Working with Us</p>
+	    <p class="area-detail">We have good working relationships not only with healthcare organizations but also with counsel for state agencies including the Department of Mental Health and the Department of Developmental Services. Our relationships and experience facilitates coordinated care of patients and can aid in expedient processing of cases. Contact us to learn how we can help.</p>
+	  </div>
+	  
+        </div>
+	
+      </div>
+
+      <div style="clear:both;"></div>
+
+      <div style="width:100%;background:#112a55;height:50px;">
+        <p class="right-nav-heading-mobile">Services We Offer</p>	
+      </div>
+      <div style="width:100%;">
+          <p class="right-nav-item"><%= link_to("Civil Litigation", civil_litigation_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Estate Planning", estate_planning_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></p>
+	  <p class="right-nav-item right-nav-item-active"><%= link_to("Mental Health Litigation", mental_health_practices_path) %></p>
+          <p class="right-nav-item"><%= link_to("Personal Injury", personal_injury_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Probate Litigation", probate_litigation_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Real Estate", real_estate_practices_path) %></p>
+	  <p class="right-nav-item"><%= link_to("Trusts", trusts_practices_path) %></p>
+
+      </div>
+      
+    </div>
+
+
+    
     <div style="clear:both;"></div>
 
     <div style="width:100%;background:#112a55;height:60px;"></div>
