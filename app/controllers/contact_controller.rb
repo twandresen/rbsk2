@@ -8,11 +8,11 @@ class ContactController < ApplicationController
 		contact = Contact.new(contact_params)
 		contact.save
 
+		ContactMailer.new_contact(contact).deliver
+
 		redirect_to root_path, notice: "Thanks for contacting us.  We'll get back to you as soon as we can!"
 
 	end
-
-
 
 	private
 
