@@ -98,6 +98,10 @@ body.modern.contact.index{
 		margin: 0 auto;
 		margin-top:40px;
 		margin-bottom:40px;
+
+		@media (max-width: @screen-sm-max) {
+			width: 80%;
+		}
 	}
 
 	.contact-left {
@@ -128,19 +132,18 @@ body.modern.contact.index{
 
 	h2 { margin-bottom:20px; }
 
-	p { font-size: 18px;
-	    font-family:Oswald;
+	p { font-size: 16px;
 	    font-weight:normal;
 	    padding:0px; }
 
 	.contact-form {
 		label {
 			display: inline-block;
-			font-family:Oswald;
-			font-size:18px;
-	  		max-width: 100%;
+			font-size:16px;
+	  	max-width: 100%;
 			margin-bottom: 5px;
 			color:#777;
+			font-weight:normal;
 		}
 		#contact_name, #contact_email, #contact_subject, #contact_message {
 			max-width: 330px;
@@ -163,6 +166,20 @@ body.modern.contact.index{
 			font-size: 16px;
 			border-radius: 4px;
 		}
+	}
+
+	input	{
+		border: 1px solid #777;
+		font-weight:normal;
+		font-size: 16px;
+	}
+	textarea	{
+		border: 1px solid #777;
+		font-weight:normal;
+	}
+	h2, h4 {
+		font-weight: normal;
+
 	}
 
 }
