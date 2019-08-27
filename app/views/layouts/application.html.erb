@@ -9,7 +9,20 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="">
+    <meta name="description" content="RBSK Law Offices offers legal services to individuals and organizations in a wide variety of practice areas throughout the state of Massachusetts.">
+    <meta name="keywords" content="legal services, richard ready, brandon saunders, matthew beaulieu, heidi kostin, rbsk law offices, guardianship, conservatorship, probate litigation, estate planning, personal injury law, civil litigation, trust attorney">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146577905-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146577905-1');
+    </script>
+    
+    
     <%= favicon_link_tag asset_path('favicon.ico'), :rel => 'icon', :type => "image/x-icon" %>
 
     <link rel="apple-touch-startup-image" href="<%= asset_path('favicon.ico') %>" media="(orientation:landscape)" />
@@ -18,7 +31,7 @@
 
     <%= csrf_meta_tags %>
 
-    <title><%= content_for?(:browser_title) ? yield(:browser_title) + " | " : "" %>RBSK Law</title>
+    <title><%= content_for?(:browser_title) ? yield(:browser_title) + " | " : "" %>RBSK Law Offices</title>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
