@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 	root "home#index"
+	get 'sitemap.xml', :to => 'home#sitemap', :defaults => {:format => 'xml'}
 
 	resources :partners, only: [:index] do
 		collection do
@@ -33,11 +34,8 @@ Rails.application.routes.draw do
 	end
 
 	resources :contact, only: [:index, :new, :create]
-
-
-        resources :terms, only: [:index]
-        
-        resources :disclaimer, only: [:index]
-        resources :privacy, only: [:index]
+  resources :terms, only: [:index]
+  resources :disclaimer, only: [:index]
+  resources :privacy, only: [:index]
         
 end
