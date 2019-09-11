@@ -20,6 +20,24 @@ before_fork do |server, worker|
 
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.connection.disconnect!
+
+  old_pid = "#{root}/tmp/pids/unicorn.pid.oldbin"
+  if File.exists?(old_pid) && server.pid != old_pid
+    #begin
+    #  Process.kill("QUIT", File.read(old_pid).to_i)
+    #rescue Errno::ENOENT, Errno::ESRCH
+    #  # someone else did our job for us
+    #end
+    begin
+      old_pid = File.read(old_pid_file).to_i
+      server.logger.info("sending QUIT to #{old_pid}")
+      # we're killing old unicorn master right there
+      Process.kill("QUIT", old_pid)
+    rescue Errno::ENOENT, Errno::ESRCH
+      # someone else did our job for us
+    end
+  end
+
 end
 
 after_fork do |server, worker|
@@ -29,6 +47,7 @@ after_fork do |server, worker|
 
   defined?(ActiveRecord::Base) and
     ActiveRecord::Base.establish_connection
+
 end
 
 # Force the bundler gemfile environment variable to

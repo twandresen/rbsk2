@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 	root "home#index"
 	get 'sitemap.xml', :to => 'home#sitemap', :defaults => {:format => 'xml'}
+	# google search verification
+	get 'googled536544756198a12.html', :to => 'home#googled536544756198a12', :defaults => {:format => 'html'}
 
 	resources :partners, only: [:index] do
 		collection do
