@@ -11,7 +11,7 @@
 			<h1>Contact Us</h1>
 		</div>
     <div class="canvas">
-			<div id="map"></div>
+			<div id="map"><div class="mapouter"><div class="gmap_canvas"><iframe width="1210" height="360" id="gmap_canvas" src="https://maps.google.com/maps?q=565%20Rounseville%20Rd.%20%20Rochester,%20MA%2002770&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org">putlocker</a><br><style>.mapouter{position:relative;text-align:right;height:360px;width:1210px;}</style><a href="https://www.embedgooglemap.net">map widget for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:360px;width:1210px;}</style></div></div></div>
     </div>
   </div>
 
@@ -70,7 +70,7 @@ function initMap() {
 
  	var uluru = {lat: 41.732763, lng: -70.8234283};
  	var map = new google.maps.Map(
- 		document.getElementById('map'), {zoom: 11, center: uluru, disableDefaultUI: true, zoomControl: false}
+ 		document.getElementById('map1'), {zoom: 11, center: uluru, disableDefaultUI: true, zoomControl: false}
 	);
  	var marker = new google.maps.Marker({position: uluru, map: map});
 	geocodeAddress(geocoder, map);
