@@ -7,7 +7,6 @@
       <div><%= link_to("Matthew H. Beaulieu", beaulieu_partners_path) %></div>
       <div><%= link_to("Heidi Kostin", kostin_partners_path) %></div>
       <div><%= link_to("Brandon Saunders", saunders_partners_path) %></div>
-      <div><%= link_to("Diane Geraghty Hall", hall_partners_path) %></div>
       <div><%= link_to("William S. Carroll", carroll_partners_path) %></div>
       <!--div><a href="/testimonials">Testimonials</a></div-->
     </div>
@@ -22,12 +21,12 @@
 	</div>
 	<div>
   	<h3><%= link_to("Services We Provide", practices_path) %></h3>
-  	<div><%= link_to("Civil Litigation", civil_litigation_practices_path) %></div>
+  	<!--div><%#= link_to("Civil Litigation", civil_litigation_practices_path) %></div-->
   	<div><%= link_to("Estate Planning & Elder Law", estate_planning_practices_path) %></div>
   	<div><%= link_to("Fiduciary Services", fiduciary_services_practices_path) %></div>
   	<div><%= link_to("Guardianship & Conservatorship", guardianship_practices_path) %></div>
   	<div><%= link_to("Mental Health Litigation", mental_health_practices_path) %></div>
-  	<div><%= link_to("Personal Injury", personal_injury_practices_path) %></div>
+  	<!--div><%#= link_to("Personal Injury", personal_injury_practices_path) %></div-->
   	<div><%= link_to("Probate Litigation", probate_litigation_practices_path) %></div>
   	<div><%= link_to("Real Estate", real_estate_practices_path) %></div>
   	<div><%= link_to("Trusts", trusts_practices_path) %></div>
@@ -52,5 +51,5 @@
   	</a>
 	</div>
 
-	<div class="copyright"> &copy; 2019 Beaulieu, Saunders & Kostin LLP |  565 Rounseville Rd., Unit 5, Rochester, MA 02770 | All rights reserved | <%= link_to("Disclaimer", disclaimer_index_path) %></div>
+	<div class="copyright"> &copy; <%= Time.now.year.to_s %> Beaulieu, Saunders & Kostin LLP |  565 Rounseville Rd., Unit 5, Rochester, MA 02770 | All rights reserved | <%= link_to("Disclaimer", disclaimer_index_path) %></div>
 </div>
