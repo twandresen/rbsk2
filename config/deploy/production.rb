@@ -12,7 +12,9 @@ set :user, 'deploy'
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-server '18.218.34.30',
+server '3.18.207.50',
+#server '18.218.34.30',
+#server '18.223.133.29',
   roles: [:web, :app, :db],
   port: fetch(:port),
   user: fetch(:user),
