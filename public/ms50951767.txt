@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "bsklawoffices.com",
+  "Id": "4867ae8d-9080-4aee-89ce-9479d76e24b5"
+}
