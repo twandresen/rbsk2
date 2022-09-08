@@ -11,6 +11,7 @@ module Rbsk2
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 		config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
+    config.exceptions_app = self.routes
 
 		#config.web_console.whitelisted_ips = '47.14.118.118'
 

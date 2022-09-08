@@ -1,0 +1,21 @@
+<% content_for :browser_title do %>
+404 - Not Found
+<% end %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="fnf-content">
+ <div class="row">
+  <div class="col-sm-12 text-center">
+   <h1>We can't find the page you're looking for...</h1>
+   <p class="lead">But, we know where this one is:</p>
+   <%= link_to "Home", root_path, class: "btn btn-primary" %>
+  </div>
+ </div>
+</div>
+<div style="margin-top:260px">
+ <%= render partial: "shared/footer"%>
+</div>

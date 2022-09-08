@@ -4,12 +4,15 @@ Rails.application.routes.draw do
 	# google search verification
 	get 'googled536544756198a12.html', :to => 'home#googled536544756198a12', :defaults => {:format => 'html'}
 
+  match '/404', to: 'errors#file_not_found', via: :all
+  #match '/500', to: 'select/errors#internal_server_error', via: :all
+
 	resources :partners, only: [:index] do
 		collection do
       get "kostin" => "partners#kostin", as: :kostin
       get "beaulieu" => "partners#beaulieu", as: :beaulieu
       get "saunders" => "partners#saunders", as: :saunders
-      get "ready" => "partners#ready", as: :ready
+      #get "ready" => "partners#ready", as: :ready
       get "hall" => "partners#hall", as: :hall
       get "carroll" => "partners#carroll", as: :carroll
 		end
